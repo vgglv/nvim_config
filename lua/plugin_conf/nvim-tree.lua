@@ -1,8 +1,8 @@
-local opts = {silent = true, noremap = true}
-vim.api.nvim_set_keymap('n', '<C-b>', '<Cmd>NvimTreeToggle<CR>', opts)
-vim.api.nvim_set_keymap('n', '<leader>r', '<Cmd>NvimTreeRefresh<CR>', opts)
+local _opts = {silent = true, noremap = true}
+vim.api.nvim_set_keymap('n', '<C-b>', '<Cmd>NvimTreeToggle<CR>', _opts)
+vim.api.nvim_set_keymap('n', '<leader>r', '<Cmd>NvimTreeRefresh<CR>', _opts)
 -- find the currently open file in tree
-vim.api.nvim_set_keymap('n', '<leader>n', '<Cmd>NvimTreeFindFile<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>n', '<Cmd>NvimTreeFindFile<CR>', _opts)
 
 local function on_attach(bufnr)
   local api = require('nvim-tree.api')
