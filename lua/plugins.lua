@@ -1,8 +1,7 @@
 
 local packer = require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
-	use 'drewtempelmeyer/palenight.vim'
-	use 'folke/tokyonight.nvim'
+	use 'rebelot/kanagawa.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
 	use "nvim-lua/plenary.nvim"
 	use {
@@ -29,7 +28,6 @@ local packer = require('packer').startup(function(use)
 		"neovim/nvim-lspconfig",
 		run = ":MasonUpdate"
 	}
-	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/cmp-path'
