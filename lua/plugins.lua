@@ -2,7 +2,7 @@
 local packer = require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	-- main theme:
-	use 'Mofiqul/dracula.nvim'
+	use { 'catppuccin/nvim', as = 'catpuccin' }
 
 	-- for code highlighting:
 	use 'nvim-treesitter/nvim-treesitter'
@@ -53,6 +53,7 @@ local packer = require('packer').startup(function(use)
 	-- code completions
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-nvim-lsp'
+	use 'L3MON4D3/LuaSnip'
 
 	-- terminal inside of nvim
 	use {
