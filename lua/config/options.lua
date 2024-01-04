@@ -1,4 +1,3 @@
-
 -- turn off backups, swaps, etc
 vim.o.swapfile = false
 vim.bo.swapfile = false
@@ -40,7 +39,6 @@ vim.opt.listchars = {
 	trail = '✚',
 	extends = '◀',
 	precedes = '▶',
-	space = '_',
 	tab = '>~'
 }
 vim.opt.list = true

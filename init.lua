@@ -1,5 +1,2 @@
-require('keymappings')
-require('plugins')
-require('theme')
-require('basics')
-require('plugin_configs')
+require("config")
+require("init")
