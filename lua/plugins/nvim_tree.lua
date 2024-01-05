@@ -19,7 +19,7 @@ local function on_attach(bufnr)
 end
 
 return {
-	"nvim-tree.lua",
+	"nvim-tree/nvim-tree.lua",
 	opts = {
 		disable_netrw       = true,
 		hijack_netrw        = true,
