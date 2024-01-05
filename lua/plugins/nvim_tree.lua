@@ -46,7 +46,8 @@ return {
 		},
 		filters = {
 			dotfiles = false,
-			custom = {}
+			custom = {},
+			git_ignored = false
 		},
 		view = {
 			width = 30,
