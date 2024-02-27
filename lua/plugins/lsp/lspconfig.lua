@@ -57,6 +57,9 @@ return {
 
 			opts.desc = "Restart LSP"
 			keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+
+			opts.desc = "Clangd Switch Header/Source"
+			keymap.set("n", "<leader>cr", "<cmd>ClangdSwitchSourceHeader<cr>", opts)
 		end
 
 		-- used to enable autocompletion (assign to every lsp server config)

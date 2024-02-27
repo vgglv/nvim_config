@@ -14,3 +14,6 @@ vim.api.nvim_set_keymap('n', '<C-b>', '<Cmd>NvimTreeToggle<CR>', opts)
 -- nvim tree
 vim.api.nvim_set_keymap('', '<M-Left>', '<Cmd>BufferPrevious<CR>', opts)
 vim.api.nvim_set_keymap('', '<M-Right>', '<Cmd>BufferNext<CR>', opts)
+
+vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', opts)
+vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', opts)

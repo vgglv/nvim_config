@@ -42,3 +42,4 @@ vim.opt.listchars = {
 	tab = '>~'
 }
 vim.opt.list = true
+vim.opt.termguicolors = true
