@@ -50,7 +50,7 @@ return {
 			git_ignored = false
 		},
 		view = {
-			width = 30,
+			width = 40,
 			side = 'left',
 		},
 		on_attach = on_attach
