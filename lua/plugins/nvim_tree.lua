@@ -53,6 +53,6 @@ return {
 			width = 40,
 			side = 'left',
 		},
-		on_attach = on_attach
+		on_attach = on_attach,
 	}
 }
