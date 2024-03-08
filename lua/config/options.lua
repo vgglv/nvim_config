@@ -45,4 +45,4 @@ vim.opt.list = true
 vim.opt.termguicolors = true
 
 vim.g.netrw_sort_by="name"
-vim.g.netrw_sorting_sequence='[\\/]$,\\<core\\%(\\.\\d\\+\\)\\=\\>'
+vim.g.netrw_sort_sequence='[\\/]$,\\<core\\%(\\.\\d\\+\\)\\=\\>'
