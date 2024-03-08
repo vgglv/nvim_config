@@ -43,3 +43,6 @@ vim.opt.listchars = {
 }
 vim.opt.list = true
 vim.opt.termguicolors = true
+
+vim.g.netrw_sort_by="name"
+vim.g.netrw_sorting_sequence='[\\/]$,\\<core\\%(\\.\\d\\+\\)\\=\\>'
