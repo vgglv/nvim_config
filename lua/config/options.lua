@@ -46,3 +46,5 @@ vim.opt.termguicolors = true
 
 vim.g.netrw_sort_by="name"
 vim.g.netrw_sort_sequence='[\\/]$,\\<core\\%(\\.\\d\\+\\)\\=\\>'
+vim.g.netrw_browse_split = 0
+vim.g.netrw_keepdir = 0
