@@ -3,6 +3,7 @@ return {
 	{ -- this stuff changes select and input to a floating windows
 		"stevearc/dressing.nvim",
 		lazy = true,
+		enabled = true,
 		init = function()
 			vim.ui.select = function(...)
 				require("lazy").load({ plugins = { "dressing.nvim" } })
@@ -89,6 +90,7 @@ return {
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
+		enabled = true,
 		init = function()
 			vim.o.timeout = true
 			vim.o.timeoutlen = 300
@@ -101,6 +103,7 @@ return {
 	},
 	{
 		"rcarriga/nvim-notify",
+		enabled = false,
 		opts = {
 			timeout = 3000,
 			max_height = function()
@@ -117,6 +120,7 @@ return {
 	{
 		"folke/noice.nvim",
 		event = "VeryLazy",
+		enabled = false,
 		opts = {
 			lsp = {
 				-- override markdown rendering so that **cmp** and other plugins use **Treesitter**
