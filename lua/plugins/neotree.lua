@@ -27,7 +27,6 @@ return {
 				follow_current_file = {
 					enabled = true
 				},
-				hijack_netrw_behavior = "disabled",
 			}
 		})
 		vim.keymap.set("n", "<C-b>", "<Cmd>Neotree toggle<CR>", {noremap=true})
