@@ -10,9 +10,9 @@ return {
 			ensure_installed = { 'c', 'cpp', 'lua', 'vim' },
 			sync_install = false,
 			auto_install = true,
-			highlight = {
-				enable = true
-			}
+			--highlight = {
+			--	enable = false
+			--}
 		})
 	end,
 }
