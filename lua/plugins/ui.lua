@@ -46,10 +46,17 @@ return {
 	{ -- this shows a status bar at the bottom of editor
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
-		config = true,
-		options = {
-			theme = 'gruvbox'
-		}
+		config = function()
+			require('lualine').setup({
+				sections = {
+					lualine_c = { { 'filename', path = 1 } }
+				},
+				options = {
+					theme = 'gruvbox',
+					icons_enabled = true,
+				}
+			})
+		end,
 	},
 	{ -- this highlights all the similar texts inside an editor
 		"RRethy/vim-illuminate",
