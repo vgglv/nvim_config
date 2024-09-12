@@ -19,4 +19,3 @@ vim.keymap.set('n', '<C-n>', ':m+1<CR>', opts)
 
 vim.keymap.set("v", "<C-n>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<C-p>", ":m '<-2<CR>gv=gv")
-

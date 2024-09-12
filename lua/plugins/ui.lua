@@ -52,7 +52,7 @@ return {
 					lualine_c = { { 'filename', path = 1 } }
 				},
 				options = {
-					theme = 'gruvbox',
+					theme = 'dracula',
 					icons_enabled = true,
 				}
 			})
