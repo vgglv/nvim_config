@@ -54,19 +54,15 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = {
-			"hrsh7th/nvim-cmp",
 			"williamboman/mason-lspconfig.nvim",
 			"williamboman/mason.nvim",
+			"hrsh7th/nvim-cmp",
 			"hrsh7th/cmp-nvim-lsp",
-			{ "antosha417/nvim-lsp-file-operations", config = true },
-			"hrsh7th/cmp-path", -- source for file system paths
 			"L3MON4D3/LuaSnip", -- snippet engine
-			"saadparwaiz1/cmp_luasnip", -- for autocompletion
-			"j-hui/fidget.nvim", -- for lsp info at the bottom screen
 		},
 		config = function()
 			require("mason").setup({})
-			require("fidget").setup({})
+			--require("fidget").setup({})
 			-- import mason-lspconfig
 			require("mason-lspconfig").setup({
 				-- list of servers for mason to install
