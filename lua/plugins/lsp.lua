@@ -59,10 +59,11 @@ return {
 			"hrsh7th/nvim-cmp",
 			"hrsh7th/cmp-nvim-lsp",
 			"L3MON4D3/LuaSnip", -- snippet engine
+			"j-hui/fidget.nvim", -- lsp info on the bottom
 		},
 		config = function()
 			require("mason").setup({})
-			--require("fidget").setup({})
+			require("fidget").setup({})
 			-- import mason-lspconfig
 			require("mason-lspconfig").setup({
 				-- list of servers for mason to install
