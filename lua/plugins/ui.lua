@@ -52,7 +52,7 @@ return {
 					lualine_c = { { 'filename', path = 1 } }
 				},
 				options = {
-					theme = 'tokyonight',
+					theme = 'rose-pine',
 					icons_enabled = true,
 				}
 			})
