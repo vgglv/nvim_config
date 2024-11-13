@@ -14,6 +14,8 @@ return {
 				require("lazy").load({ plugins = { "dressing.nvim" } })
 				return vim.ui.input(...)
 			end
+		end
+	},
 	{ -- this stuff highlights indentation lines
 		"lukas-reineke/indent-blankline.nvim",
 		event = { "BufReadPre", "BufNewFile" },
