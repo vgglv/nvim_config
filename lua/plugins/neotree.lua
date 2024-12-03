@@ -31,5 +31,6 @@ return {
 			}
 		})
 		vim.keymap.set("n", "<C-b>", "<Cmd>Neotree toggle<CR>", {noremap=true})
+		vim.keymap.set("n", "-", "<Cmd>Neotree position=current reveal_file=%:p<CR>", {noremap=true})
 	end
 }
