@@ -8,20 +8,28 @@ vim.o.autoread = true
 -- 8 lines away from margin
 vim.o.scrolloff = 8
 
+local opt = vim.opt
+opt.autoindent = true
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.smartindent = true
+opt.expandtab = true
+
 -- indent guides
-vim.o.tabstop = 4 -- maximum width of tab character (measured in spaces)
-vim.bo.tabstop = 4
-vim.o.shiftwidth = 4 	    -- size of indent (measured in spaces), should equal tabstop
-vim.bo.shiftwidth = 4
-vim.o.softtabstop = 4 	  -- should be the same as the other two above
-vim.bo.softtabstop = 4
-vim.o.expandtab = false    -- expand tabs to spaces
-vim.bo.expandtab = false   -- expand tabs to spaces
-vim.o.smartindent = true  -- smart indenting on new line for C-like programs
-vim.bo.smartindent = true
-vim.o.autoindent = true   -- copy the indentation from previous line
-vim.bo.autoindent = true
-vim.o.smarttab = true 	  -- tab infront of a line inserts blanks based on shiftwidth
+--vim.o.tabstop = 4 -- maximum width of tab character (measured in spaces)
+--vim.bo.tabstop = 4
+--vim.o.shiftwidth = 4 	    -- size of indent (measured in spaces), should equal tabstop
+--vim.bo.shiftwidth = 4
+--vim.o.softtabstop = 4 	  -- should be the same as the other two above
+--vim.bo.softtabstop = 4
+--vim.o.expandtab = false    -- expand tabs to spaces
+--vim.bo.expandtab = false   -- expand tabs to spaces
+--vim.o.smartindent = true  -- smart indenting on new line for C-like programs
+--vim.bo.smartindent = true
+--vim.o.autoindent = true   -- copy the indentation from previous line
+--vim.bo.autoindent = true
+--vim.o.smarttab = true 	  -- tab infront of a line inserts blanks based on shiftwidth
 
 -- show line numbers
 vim.wo.number = true
