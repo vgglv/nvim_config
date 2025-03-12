@@ -57,7 +57,6 @@ return {
             "williamboman/mason.nvim",
             "hrsh7th/nvim-cmp",
             "hrsh7th/cmp-nvim-lsp",
-            "L3MON4D3/LuaSnip", -- snippet engine
             "j-hui/fidget.nvim", -- lsp info on the bottom
         },
         config = function()
@@ -107,13 +106,7 @@ return {
             })
 
             local cmp = require("cmp")
-            local luasnip = require("luasnip")
             cmp.setup({
-                snippet = { -- configure how nvim-cmp interacts with snippet engine
-                    expand = function(args)
-                        luasnip.lsp_expand(args.body)
-                    end,
-                },
                 mapping = {
                     ["<C-n>"] = cmp.mapping(function(fallback)
                         if cmp.visible() then
@@ -128,8 +121,6 @@ return {
                     ["<C-p>"] = cmp.mapping(function(fallback)
                         if cmp.visible() then
                             cmp.select_prev_item()
-                        elseif luasnip.jumpable(-1) then
-                            luasnip.jump(-1)
                         else
                             fallback()
                         end
@@ -146,7 +137,6 @@ return {
                 -- sources for autocompletion
                 sources = cmp.config.sources({
                     { name = "nvim_lsp" },
-                    { name = "luasnip" }, -- snippets
                     { name = "path" }, -- file system paths
                 })
             })
