@@ -1,11 +1,8 @@
 return {
-    "ellisonleao/gruvbox.nvim",
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
-    opts = {
-        invert_signs = true
-    },
     config = function(opts)
-        vim.cmd.colorscheme("gruvbox")
-        require("gruvbox").setup(opts)
+        vim.cmd.colorscheme("catppuccin")
     end
 }
