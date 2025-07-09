@@ -11,7 +11,7 @@ return {
         },
         modules = {},
         ignore_install = {},
-        indent = {enable = true}
+        indent = {enable = false}
     },
     config = function (_, opts)
         require('nvim-treesitter.configs').setup(opts)

@@ -14,6 +14,7 @@ opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.smartindent = true
+opt.autoindent = true
 opt.expandtab = false
 
 -- indent guides
@@ -25,11 +26,11 @@ opt.expandtab = false
 --vim.bo.softtabstop = 4
 --vim.o.expandtab = false    -- expand tabs to spaces
 --vim.bo.expandtab = false   -- expand tabs to spaces
---vim.o.smartindent = true  -- smart indenting on new line for C-like programs
---vim.bo.smartindent = true
---vim.o.autoindent = true   -- copy the indentation from previous line
---vim.bo.autoindent = true
---vim.o.smarttab = true 	  -- tab infront of a line inserts blanks based on shiftwidth
+vim.o.smartindent = true  -- smart indenting on new line for C-like programs
+vim.bo.smartindent = true
+vim.o.autoindent = true   -- copy the indentation from previous line
+vim.bo.autoindent = true
+vim.o.smarttab = true 	  -- tab infront of a line inserts blanks based on shiftwidth
 
 -- show line numbers
 vim.wo.number = true
