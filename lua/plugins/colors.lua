@@ -16,6 +16,9 @@ return {
 			require('vscode').setup({
 				transparent = true,
 				italic_comments = false,
+				group_overrides = {
+					NeoTreeDimText = { bg = "NONE" },
+				},
 			})
 			vim.cmd("colorscheme vscode")
 		end
