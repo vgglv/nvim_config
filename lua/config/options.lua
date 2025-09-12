@@ -44,11 +44,11 @@ vim.o.hlsearch = true		-- highlight the search results
 vim.o.clipboard = "unnamedplus"
 
 vim.opt.listchars = {
-	eol = '⤶',
-	trail = '✚',
-	extends = '◀',
-	precedes = '▶',
-	tab = '>~'
+	--eol = '⤶',
+	trail = '·',
+	extends = '❯',
+	precedes = '❮',
+	tab = '→ ', -- pretty arrow with a space
 }
 vim.opt.list = true
 vim.opt.termguicolors = true
