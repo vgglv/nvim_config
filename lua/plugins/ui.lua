@@ -24,12 +24,12 @@ return {
 					icons_enabled = true,
 				},
 				sections = {
-					lualine_a = {'mode'},
-					lualine_b = {'diagnostics'},
+					lualine_a = { 'mode' },
+					lualine_b = { 'diagnostics' },
 					lualine_c = { { 'filename', path = 1 } },
-					lualine_x = {'filetype'},
+					lualine_x = { 'filetype' },
 					lualine_y = {},
-					lualine_z = {'location'}
+					lualine_z = { 'location' }
 				}
 			})
 		end,

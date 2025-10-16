@@ -26,19 +26,19 @@ opt.expandtab = false
 --vim.bo.softtabstop = 4
 --vim.o.expandtab = false    -- expand tabs to spaces
 --vim.bo.expandtab = false   -- expand tabs to spaces
-vim.o.smartindent = true  -- smart indenting on new line for C-like programs
+vim.o.smartindent = true -- smart indenting on new line for C-like programs
 vim.bo.smartindent = true
-vim.o.autoindent = true   -- copy the indentation from previous line
+vim.o.autoindent = true  -- copy the indentation from previous line
 vim.bo.autoindent = true
-vim.o.smarttab = true 	  -- tab infront of a line inserts blanks based on shiftwidth
+vim.o.smarttab = true    -- tab infront of a line inserts blanks based on shiftwidth
 
 -- show line numbers
 vim.wo.number = true
 
 vim.o.ignorecase = true -- Ignorecase when searching
-vim.o.incsearch = true	-- start searching on each keystroke
-vim.o.smartcase = true	-- ignore case when lowercase, match case when capital case is used
-vim.o.hlsearch = true		-- highlight the search results
+vim.o.incsearch = true  -- start searching on each keystroke
+vim.o.smartcase = true  -- ignore case when lowercase, match case when capital case is used
+vim.o.hlsearch = true   -- highlight the search results
 
 -- Copy paste between vim and everything else
 vim.o.clipboard = "unnamedplus"

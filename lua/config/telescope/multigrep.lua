@@ -16,7 +16,7 @@ local live_multigrep = function(opts)
 			end
 
 			local pieces = vim.split(prompt, "  ")
-			local args = {"rg"}
+			local args = { "rg" }
 			if pieces[1] then
 				table.insert(args, "-e")
 				table.insert(args, pieces[1])
@@ -56,19 +56,19 @@ local ripgrep_in_folder = function(opts)
 			end
 
 			local pieces = vim.split(prompt, "  ", { trimempty = true })
-			local args = {"rg"}
+			local args = { "rg" }
 			if pieces[1] then
 				table.insert(args, "-e")
 				table.insert(args, pieces[1])
 			end
 
 			vim.list_extend(args, {
-				"--color=never", 
-				"--no-heading", 
-				"--with-filename", 
-				"--line-number", 
-				"--column", 
-				"--smart-case" 
+				"--color=never",
+				"--no-heading",
+				"--with-filename",
+				"--line-number",
+				"--column",
+				"--smart-case"
 			})
 
 			for i = 2, #pieces do
