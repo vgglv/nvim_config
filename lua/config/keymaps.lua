@@ -63,4 +63,6 @@ opts.desc = "Clangd Switch Header/Source"
 vim.keymap.set("n", "<leader>cr", "<cmd>LspClangdSwitchSourceHeader<cr>", opts)
 
 opts.desc = "Format buffer"
-vim.keymap.set("n", "<leader>co", function() vim.lsp.buf.format() end, opts)
+vim.keymap.set("n", "<leader>co", function() 
+	vim.lsp.buf.format()
+end, opts)
