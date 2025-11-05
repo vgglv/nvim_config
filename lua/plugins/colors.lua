@@ -4,7 +4,8 @@ return {
 		name = "rose-pine",
 		config = function()
 			require('rose-pine').setup({
-				disable_background = true,
+				variant = "moon",
+				disable_background = false,
 				styles = {
 					italic = true,
 					bold = true,
@@ -37,7 +38,23 @@ return {
 			vim.g.gruvbox_material_background = 'medium' -- [soft, hard, medium]
 			vim.g.gruvbox_material_transparent_background = 0 -- 0,1,2
 
-			vim.cmd.colorscheme "gruvbox-material"
+			--vim.cmd.colorscheme "gruvbox-material"
+		end
+	},
+	{
+		"folke/tokyonight.nvim",
+		config = function()
+			require('tokyonight').setup({
+				--style = "night",
+				--style = "storm",
+				style = "moon",
+				--style = "day",
+				on_colors = function(colors)
+					colors.hint = colors.orange
+					colors.error = "#ff0000"
+				end
+			})
+			vim.cmd.colorscheme "tokyonight"
 		end
 	}
 }
