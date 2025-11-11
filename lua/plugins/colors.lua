@@ -26,7 +26,7 @@ return {
 					NeoTreeDimText = { bg = "NONE" },
 				},
 			})
-			--vim.cmd.colorscheme "vscode"
+			vim.cmd.colorscheme "vscode"
 		end
 	},
 	{
@@ -54,7 +54,7 @@ return {
 					colors.error = "#ff0000"
 				end
 			})
-			vim.cmd.colorscheme "tokyonight"
+			--vim.cmd.colorscheme "tokyonight"
 		end
 	}
 }
