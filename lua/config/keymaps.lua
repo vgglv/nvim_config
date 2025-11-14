@@ -7,7 +7,6 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set('n', 'dd', '"_dd', opts)
 vim.keymap.set('n', 'd', '"_d', opts)
 vim.keymap.set('v', 'd', '"_d', opts)
--- vim.api.nvim_set_keymap('n', '<C-b>', '<Cmd>Neotree toggle<CR>', opts)
 
 vim.keymap.set('n', '<C-h>', '<C-w>h', opts)
 vim.keymap.set('n', '<C-l>', '<C-w>l', opts)
@@ -22,9 +21,6 @@ vim.keymap.set("v", "<C-p>", ":m '<-2<CR>gv=gv")
 
 opts.desc = "Show LSP references"
 vim.keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
-
-opts.desc = "Go to declaration"
-vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 
 opts.desc = "Show LSP definitions"
 vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts)
@@ -66,3 +62,6 @@ opts.desc = "Format buffer"
 vim.keymap.set("n", "<leader>co", function()
 	vim.lsp.buf.format()
 end, opts)
+
+opts.desc = "Explore"
+vim.keymap.set("n", "-", "<cmd>Explore<CR>")
