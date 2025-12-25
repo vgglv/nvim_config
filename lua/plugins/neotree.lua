@@ -21,6 +21,7 @@ return {
 			},
 			window = {
 				position = "right"
+				--position = "left", -- left, right, top, bottom, float, current
 			}
 		})
 		vim.keymap.set("n", "<C-b>", "<Cmd>Neotree toggle<CR>", { noremap = true })
