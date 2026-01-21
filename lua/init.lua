@@ -1,6 +1,6 @@
 
 local plugins_list = {
-	"https://github.com/sainnhe/gruvbox-material",
+	"https://github.com/catppuccin/nvim",
 	"https://github.com/nvim-neo-tree/neo-tree.nvim",
 	"https://github.com/nvim-lua/plenary.nvim",
 	"https://github.com/nvim-tree/nvim-web-devicons",
