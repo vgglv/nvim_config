@@ -3,15 +3,10 @@ vim.keymap.set("n", "s", "<Nop>")
 vim.g.mapleader = " "
 
 -- setting dd as delete
-local opts = { noremap = true, silent = true }
+local opts = { noremap = true }
 vim.keymap.set('n', 'dd', '"_dd', opts)
 vim.keymap.set('n', 'd', '"_d', opts)
 vim.keymap.set('v', 'd', '"_d', opts)
-
-vim.keymap.set('n', '<C-h>', '<C-w>h', opts)
-vim.keymap.set('n', '<C-l>', '<C-w>l', opts)
-vim.keymap.set('n', '<C-j>', '<C-w>j', opts)
-vim.keymap.set('n', '<C-k>', '<C-w>k', opts)
 
 vim.keymap.set('n', '<C-p>', ':m-2<CR>', opts)
 vim.keymap.set('n', '<C-n>', ':m+1<CR>', opts)
