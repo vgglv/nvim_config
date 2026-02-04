@@ -8,10 +8,6 @@
       "rev": "7fa433a83118a70fe24c1ce88d5f0bd3453c0970",
       "src": "https://github.com/j-hui/fidget.nvim"
     },
-    "gruvbox-material": {
-      "rev": "e4359a2f80ef7275b080be180841c62ca8322757",
-      "src": "https://github.com/sainnhe/gruvbox-material"
-    },
     "harpoon": {
       "rev": "87b1a3506211538f460786c23f98ec63ad9af4e5",
       "src": "https://github.com/ThePrimeagen/harpoon",
