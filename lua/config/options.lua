@@ -33,3 +33,9 @@ vim.opt.listchars = {
 vim.opt.list = true
 vim.opt.termguicolors = true
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "*",
+  callback = function()
+    vim.opt_local.formatoptions:remove({ "c", "r", "o" })
+  end,
+})
