@@ -6,7 +6,7 @@ vim.o.writebackup = false
 vim.o.autoread = true
 
 local opt = vim.opt
-opt.autoindent = true
+opt.autoindent = false
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4

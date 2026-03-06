@@ -1,8 +1,7 @@
-local toggleterm = require('toggleterm')
-toggleterm.setup({
+require("toggleterm").setup({
 	size = 20,
 	open_mapping = "<C-\\>",
-	direction = 'float',
+	direction = 'tab', -- vertical, horizontal, tab, float
 	float_opts = {
 		border = 'curved'
 	},
