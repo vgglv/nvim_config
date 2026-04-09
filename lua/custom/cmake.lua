@@ -45,18 +45,18 @@ local function run_in_buffer(cmd)
 	return job_id
 end
 
-vim.api.nvim_create_user_command("CMakeConfigure", function()
+vim.api.nvim_create_user_command("Cmakeconf", function()
   run_in_buffer({
     "cmake",
-    "-DCMAKE_EXPORT_COMPILE_COMMANDS=true",
-    "-DCMAKE_BUILD_TYPE=Debug",
+    "--preset",
+    "ninja",
     "-S", vim.fn.getcwd(),
     "-B", vim.fn.getcwd() .. "/build",
     "-G", "Ninja"
   })
 end, {})
 
-vim.api.nvim_create_user_command("CMakeBuild", function()
+vim.api.nvim_create_user_command("Cmakebuild", function()
   run_in_buffer({
     "cmake",
 	"--build",
