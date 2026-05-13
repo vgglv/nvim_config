@@ -1,12 +1,15 @@
 require("mason").setup({})
 require("fidget").setup({})
-require("mason-lspconfig").setup({
-	ensure_installed = {
-		"lua_ls",
-		"clangd"
+
+vim.lsp.config("lua_ls", {
+	settings = {
+		Lua = {
+			runtime = { version = "LuaJIT" },
+			diagnostics = { globals = { "vim" } },
+			workspace = { library = vim.api.nvim_get_runtime_file("", true) },
+			telemetry = { enable = false },
+		},
 	},
-	automatic_installation = true,
-	automatic_enable = true,
 })
 
 local cmp = require("cmp")
@@ -22,3 +25,8 @@ cmp.setup({
 		{ name = "nvim_lsp" }
 	}, { name = 'buffer' })
 })
+
+require("mason-lspconfig").setup({
+	automatic_enable = true,
+})
+
