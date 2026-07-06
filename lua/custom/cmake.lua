@@ -45,21 +45,70 @@ local function run_in_buffer(cmd)
 	return job_id
 end
 
-vim.api.nvim_create_user_command("Cmakeconf", function()
-  run_in_buffer({
-    "cmake",
-    "--preset",
-    "ninja",
-    "-S", vim.fn.getcwd(),
-    "-B", vim.fn.getcwd() .. "/build",
-    "-G", "Ninja"
-  })
+vim.api.nvim_create_user_command("CMakeConf", function()
+	run_in_buffer({
+		"cmake",
+		"-DCMAKE_BUILD_TYPE=Debug",
+		"-DCMAKE_EXPORT_COMPILE_COMMANDS=True",
+		"-S", vim.fn.getcwd(),
+		"-B", vim.fn.getcwd() .. "/build",
+		"-G", "Ninja"
+	})
 end, {})
 
-vim.api.nvim_create_user_command("Cmakebuild", function()
-  run_in_buffer({
-    "cmake",
-	"--build",
-	"build",
-  })
+vim.api.nvim_create_user_command("CMakeBuild", function()
+	run_in_buffer({
+		"cmake",
+		"--build",
+		"build",
+	})
 end, {})
+
+local function get_cmake_targets()
+	local handle = io.popen(
+		"cmake --build build --target help 2>/dev/null"
+	)
+
+	if not handle then
+		return {}
+	end
+
+	local result = handle:read("*a")
+	handle:close()
+
+	local targets = {}
+
+	for line in result:gmatch("[^\r\n]+") do
+		local target = line:match("%.%.%.%s+([%w%-%._]+)$")
+		if target then
+			table.insert(targets, target)
+		end
+	end
+
+	table.sort(targets)
+	return targets
+end
+
+vim.api.nvim_create_user_command("CMakeRun", function()
+	local targets = get_cmake_targets()
+
+	vim.ui.select(targets, {
+		prompt = "Select executable:",
+	}, function(choice)
+		if not choice then
+			return
+		end
+
+		run_in_buffer({
+			"cmake",
+			"--build",
+			"build",
+			"--target",
+			choice,
+		})
+	end)
+end, {})
+
+vim.keymap.set("n", "<Leader>bc", "<cmd>CMakeConf<CR>")
+vim.keymap.set("n", "<Leader>bb", "<cmd>CMakeBuild<CR>")
+vim.keymap.set("n", "<Leader>br", "<cmd>CMakeRun<CR>")

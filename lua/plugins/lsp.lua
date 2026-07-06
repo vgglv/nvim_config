@@ -6,7 +6,15 @@ vim.lsp.config("lua_ls", {
 		Lua = {
 			runtime = { version = "LuaJIT" },
 			diagnostics = { globals = { "vim" } },
-			workspace = { library = vim.api.nvim_get_runtime_file("", true) },
+			workspace = {
+				library = {
+					[vim.fn.expand "$VIMRUNTIME/lua"] = true,
+					[vim.fn.expand "$VIMRUNTIME/lua/vim/lsp"] = true,
+					[vim.fn.stdpath "data" .. "/lazy/ui/nvchad_types"] = true,
+					[vim.fn.stdpath "data" .. "/lazy/lazy.nvim/lua/lazy"] = true,
+					[vim.fn.expand "${3rd}/love2d/library"] = true,
+				}
+			},
 			telemetry = { enable = false },
 		},
 	},
@@ -29,4 +37,3 @@ cmp.setup({
 require("mason-lspconfig").setup({
 	automatic_enable = true,
 })
-

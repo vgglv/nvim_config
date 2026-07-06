@@ -17,7 +17,6 @@ local plugins_list = {
 	{ src = "https://github.com/ThePrimeagen/harpoon", version = "harpoon2" },
 	"https://github.com/akinsho/toggleterm.nvim",
 	"https://github.com/lewis6991/gitsigns.nvim",
-	"https://github.com/rose-pine/neovim",
 }
 vim.pack.add(plugins_list)
 
