@@ -1,6 +1,5 @@
 
 local plugins_list = {
-	"https://github.com/catppuccin/nvim",
 	"https://github.com/nvim-neo-tree/neo-tree.nvim",
 	"https://github.com/nvim-lua/plenary.nvim",
 	"https://github.com/nvim-tree/nvim-web-devicons",
@@ -25,6 +24,5 @@ require('plugins.terminal')
 require('plugins.telescope')
 require('plugins.neotree')
 require('plugins.lsp')
-require('plugins.colors')
 require("custom.multigrep").setup()
 require("custom.cmake")
