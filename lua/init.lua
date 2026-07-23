@@ -13,7 +13,6 @@ local plugins_list = {
 	"https://github.com/hrsh7th/nvim-cmp",
 	"https://github.com/hrsh7th/cmp-nvim-lsp",
 	"https://github.com/j-hui/fidget.nvim",
-	{ src = "https://github.com/ThePrimeagen/harpoon", version = "harpoon2" },
 	"https://github.com/akinsho/toggleterm.nvim",
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/nvim-treesitter/nvim-treesitter",

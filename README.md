@@ -1,4 +1,3 @@
 # nvim_config
 
-treesitter + mason + neotree + telescope + dressing + lualine
-
+my config for neovim
