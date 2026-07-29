@@ -16,7 +16,8 @@ local plugins_list = {
 	"https://github.com/akinsho/toggleterm.nvim",
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/nvim-treesitter/nvim-treesitter",
-	"https://github.com/nvim-treesitter/nvim-treesitter-context"
+	"https://github.com/nvim-treesitter/nvim-treesitter-context",
+	"https://github.com/ellisonleao/gruvbox.nvim",
 }
 vim.pack.add(plugins_list)
 
@@ -25,5 +26,6 @@ require('plugins.terminal')
 require('plugins.telescope')
 require('plugins.neotree')
 require('plugins.lsp')
+require('plugins.colors')
 require("custom.multigrep").setup()
 require("custom.cmake")

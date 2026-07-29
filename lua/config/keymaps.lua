@@ -8,6 +8,9 @@ vim.keymap.set('n', 'dd', '"_dd', opts)
 vim.keymap.set('n', 'd', '"_d', opts)
 vim.keymap.set('v', 'd', '"_d', opts)
 
+vim.keymap.set('n', 's', '"_s', opts)
+vim.keymap.set('v', 's', '"_s', opts)
+
 vim.keymap.set('n', '<C-p>', ':m-2<CR>', opts)
 vim.keymap.set('n', '<C-n>', ':m+1<CR>', opts)
 
