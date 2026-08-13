@@ -17,7 +17,7 @@ local plugins_list = {
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/nvim-treesitter/nvim-treesitter",
 	"https://github.com/nvim-treesitter/nvim-treesitter-context",
-	"https://github.com/ellisonleao/gruvbox.nvim",
+	"https://github.com/catppuccin/nvim.git"
 }
 vim.pack.add(plugins_list)
 
