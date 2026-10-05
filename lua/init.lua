@@ -17,6 +17,7 @@ local plugins_list = {
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/nvim-treesitter/nvim-treesitter",
 	"https://github.com/nvim-treesitter/nvim-treesitter-context",
+	"https://github.com/Mofiqul/vscode.nvim.git"
 }
 vim.pack.add(plugins_list)
 
@@ -27,3 +28,4 @@ require('plugins.neotree')
 require('plugins.lsp')
 require("custom.multigrep").setup()
 require("custom.cmake")
+require('plugins.theme')
