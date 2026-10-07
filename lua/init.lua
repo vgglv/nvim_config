@@ -17,7 +17,8 @@ local plugins_list = {
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/nvim-treesitter/nvim-treesitter",
 	"https://github.com/nvim-treesitter/nvim-treesitter-context",
-	"https://github.com/Mofiqul/vscode.nvim.git"
+	"https://github.com/rebelot/kanagawa.nvim.git",
+	{ src = "https://github.com/ThePrimeagen/harpoon.git", version = 'harpoon2' }
 }
 vim.pack.add(plugins_list)
 
