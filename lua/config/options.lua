@@ -11,6 +11,7 @@ opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = false
+opt.wrap = false
 
 -- show line numbers
 vim.wo.number = true
